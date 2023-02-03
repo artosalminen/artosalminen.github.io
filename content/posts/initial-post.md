@@ -4,8 +4,11 @@ date: 2023-02-03T15:04:11+02:00
 draft: false
 ---
 
-So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, but here we go:
+So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
 
+So here we go:
+
+0. Create GitHub account if you do not have one yet
 1. Create new GitHub repository named `<your GitHub username>.github.io`
 2. On your local development environment, create a folder to work in, run `npm install hugo-bin --save-dev` to install Hugo CLI
 3. Clone your GitHub repository under the same directory `git clone https://github.com/<your username>/<your username>.github.io.git`
