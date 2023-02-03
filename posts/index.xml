@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Arto's notes</title><link>https://artosalminen.github.io/posts/</link><description>Recent content in Posts on Arto's notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 03 Feb 2023 15:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How to set up a blog with Hugo and GitHub Pages in 10 minutes</title><link>https://artosalminen.github.io/posts/initial-post/</link><pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate><guid>https://artosalminen.github.io/posts/initial-post/</guid><description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
-So here we go:
-Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/posts/</link>
+    <description>Recent content in Posts on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Feb 2023 15:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to set up a blog with Hugo and GitHub Pages in 10 minutes</title>
+      <link>https://artosalminen.github.io/posts/initial-post/</link>
+      <pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/initial-post/</guid>
+      <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
+So here we go, you have 40 for each step.
+Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>
+    </item>
+    
+  </channel>
+</rss>
