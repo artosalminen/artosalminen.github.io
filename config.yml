@@ -3,10 +3,13 @@ languageCode: 'en-us'
 title: "Arto's dev time by-products"
 theme: 'PaperMod'
 
+paginate: 5
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 googleAnalytics: G-WNZM3KSNKG
 
@@ -14,14 +17,37 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  en:
+    languageName: 'English'
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Personal ramblings about code and stuff"
+  description: 'Personal ramblings about code and stuff'
   keywords: [Blog, Portfolio]
   author: Arto Salminen
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
+  DateFormat: 'January 2, 2006'
   defaultTheme: dark #, light
   disableThemeToggle: false
 
@@ -29,14 +55,37 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
+  # disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  homeInfoParams:
+    Title: 'Hello fellow!'
+    Content: Feel free to browse my coding related notes
+
+  socialIcons:
+    - name: github
+      url: 'https://github.com/artosalminen'
+    - name: LinkedIn
+      url: 'https://www.linkedin.com/in/artosalminen/'
+    - name: Rss
+      url: 'index.xml'
+
+  editPost:
+    URL: 'https://github.com/artosalminen/artosalminen.github.io/tree/main/content'
+    Text: 'Suggest Changes' # edit text
+    appendFilePath: true # to append file path to Edit link
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

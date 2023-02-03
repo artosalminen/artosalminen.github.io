@@ -1,7 +1,11 @@
 ---
 title: "How to set up a blog with Hugo and GitHub Pages in 10 minutes"
 date: 2023-02-03T15:04:11+02:00
-draft: false
+series: ["Hugo", "GitHub Pages"]
+weight: 1
+aliases: ["/hugo-installation"]
+tags: ["Hugo", "GitHub Pages"]
+author: "Arto Salminen"
 ---
 
 So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
