@@ -6,7 +6,7 @@ draft: false
 
 So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
 
-So here we go:
+So here we go, you have 40 for each step.
 
 0. Create GitHub account if you do not have one yet
 1. Create new GitHub repository named `<your GitHub username>.github.io`
