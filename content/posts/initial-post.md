@@ -4,8 +4,6 @@ date: 2023-02-03T15:04:11+02:00
 draft: false
 ---
 
-## Introduction
-
 So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, but here we go:
 
 1. Create new GitHub repository named `<your GitHub username>.github.io`
