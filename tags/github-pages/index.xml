@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 03 Feb 2023 15:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to set up a blog with Hugo and GitHub Pages in 10 minutes</title>
-      <link>https://artosalminen.github.io/posts/initial-post/</link>
+      <link>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</link>
       <pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate>
       
-      <guid>https://artosalminen.github.io/posts/initial-post/</guid>
+      <guid>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</guid>
       <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
 So here we go, you have 40 for each step.
 Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>

@@ -2,11 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://artosalminen.github.io/posts/initial-post/</loc>
+    <loc>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</loc>
     <lastmod>2023-02-03T15:04:11+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/</loc>
-    <lastmod>2023-02-03T15:04:11+02:00</lastmod>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/mongodb/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/series/mongodb/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/mongosh/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/posts/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/series/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/</loc>
+    <lastmod>2023-02-04T09:32:28+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/github-pages/</loc>
     <lastmod>2023-02-03T15:04:11+02:00</lastmod>
@@ -18,15 +39,6 @@
     <lastmod>2023-02-03T15:04:11+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/series/hugo/</loc>
-    <lastmod>2023-02-03T15:04:11+02:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/posts/</loc>
-    <lastmod>2023-02-03T15:04:11+02:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/series/</loc>
-    <lastmod>2023-02-03T15:04:11+02:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/tags/</loc>
     <lastmod>2023-02-03T15:04:11+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/archives/</loc>
