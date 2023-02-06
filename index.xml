@@ -6,7 +6,18 @@
     <description>Recent content on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Feb 2023 09:32:28 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 08:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to merge a nested list in Mongo document with another found in adjacent collection</title>
+      <link>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</link>
+      <pubDate>Sun, 05 Feb 2023 08:04:11 +0200</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</guid>
+      <description>Let&amp;rsquo;s consider a situation where you have two collections, houses and people. Each house has a collection of key holders, which link to the persons collection with their IDs. Key holders list also holds information when the key was given for the identified person.
+In bson, the situation in the database looks like this:
+{ &amp;#34;houses&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Main street 1&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2022-02-02T02:02:02&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; }, { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2021-01-01T01:01:01&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fd&amp;#34; } ] }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Broadway 3&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;1993-03-03T03:03:03&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; } ] } ], &amp;#34;persons&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;Jack Bauer&amp;#34;, }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;James Bond&amp;#34;, } ] } You can also do some mapping for the source list, for instance convert foreign keys from strings to ObjectIds.</description>
+    </item>
+    
     <item>
       <title>How to Copy a Collection of Documents to Another Database with mongosh</title>
       <link>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</link>

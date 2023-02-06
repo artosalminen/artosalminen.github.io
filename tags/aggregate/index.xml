@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Arto&#39;s dev time by-products</title>
-    <link>https://artosalminen.github.io/posts/</link>
-    <description>Recent content in Posts on Arto&#39;s dev time by-products</description>
+    <title>aggregate on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/tags/aggregate/</link>
+    <description>Recent content in aggregate on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Feb 2023 08:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 08:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/aggregate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to merge a nested list in Mongo document with another found in adjacent collection</title>
       <link>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</link>
@@ -16,28 +16,6 @@
       <description>Let&amp;rsquo;s consider a situation where you have two collections, houses and people. Each house has a collection of key holders, which link to the persons collection with their IDs. Key holders list also holds information when the key was given for the identified person.
 In bson, the situation in the database looks like this:
 { &amp;#34;houses&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Main street 1&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2022-02-02T02:02:02&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; }, { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2021-01-01T01:01:01&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fd&amp;#34; } ] }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Broadway 3&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;1993-03-03T03:03:03&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; } ] } ], &amp;#34;persons&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;Jack Bauer&amp;#34;, }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;James Bond&amp;#34;, } ] } You can also do some mapping for the source list, for instance convert foreign keys from strings to ObjectIds.</description>
-    </item>
-    
-    <item>
-      <title>How to Copy a Collection of Documents to Another Database with mongosh</title>
-      <link>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</link>
-      <pubDate>Sat, 04 Feb 2023 09:32:28 +0200</pubDate>
-      
-      <guid>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</guid>
-      <description>If you need to copy a collection of documents from one Mongo collection to another, you can use the mongodump and mongorestore. But if the source database is in the same instance as the target, then you may be able to take a shortcut with mongosh.
-Here is the script to use:
-db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); }); For example, if you are copying all documents from current databases cars collection to a database called another-db&amp;rsquo;s collection vehicles:</description>
-    </item>
-    
-    <item>
-      <title>How to set up a blog with Hugo and GitHub Pages in 10 minutes</title>
-      <link>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</link>
-      <pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate>
-      
-      <guid>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</guid>
-      <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
-So here we go, you have 40 for each step.
-Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>
     </item>
     
   </channel>
