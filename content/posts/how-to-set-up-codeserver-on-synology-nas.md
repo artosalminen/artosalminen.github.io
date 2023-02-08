@@ -1,11 +1,10 @@
 ---
 title: "How to Set Up a Codeserver on Synology NAS"
-date: 2023-02-07T10:00:00Z
+date: 2023-02-09T10:00:00Z
 series: ["Synology", "Coding"]
 weight: 1
 tags: ["Synology", "Coding", "VSCode"]
 author: "Arto Salminen"
-draft: true
 ---
 
 Have you ever missed the VSCode on your tablet? Now there is a solution: run the

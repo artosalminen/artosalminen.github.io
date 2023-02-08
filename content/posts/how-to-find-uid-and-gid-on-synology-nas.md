@@ -1,11 +1,10 @@
 ---
 title: "How to find out your UID and GID on Synology NAS"
-date: 2023-02-05T10:00:00Z
+date: 2023-02-09T10:00:00Z
 series: ["Synology"]
 weight: 1
 tags: ["Synology"]
 author: "Arto Salminen"
-draft: true
 ---
 
 The UID and GID values for default user on Synlogy NAS are usually 1026 and 100.

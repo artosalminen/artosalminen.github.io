@@ -1,11 +1,10 @@
 ---
 title: "Template, post header here"
-date: 2023-02-06T10:00:00Z
+date: 2023-02-09T10:00:00Z
 series: ["Synology"]
 weight: 1
 tags: ["Synology"]
 author: "Arto Salminen"
-draft: true
 ---
 
 To access the Syonology NAS ports outside of your local network, you need to
