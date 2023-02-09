@@ -6,7 +6,18 @@
     <description>Recent content on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Feb 2023 08:04:11 +0200</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use ConfigService in NestJS in application bootstrap</title>
+      <link>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</guid>
+      <description>You might want to access the configuration, for example to set the microservice configuration based on the values from the configuration service.
+One way to do this is to create an application context from the AppModule.
+const appContext = await NestFactory.createApplicationContext(BootstrapConfigModule) const configService = appContext.get(ConfigService) const SERVICE_PORT = configService.get(&amp;#39;SERVICE_PORT&amp;#39;) appContext.close() But a better idea is to use a &amp;ldquo;temporary&amp;rdquo; module to avoid double instantiation of the whole app. See a full example below.</description>
+    </item>
+    
     <item>
       <title>How to merge a nested list in Mongo document with another found in adjacent collection</title>
       <link>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</link>

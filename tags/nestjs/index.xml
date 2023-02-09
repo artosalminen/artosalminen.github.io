@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NestJS on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/tags/nestjs/</link>
+    <description>Recent content in NestJS on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/nestjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use ConfigService in NestJS in application bootstrap</title>
+      <link>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</guid>
+      <description>You might want to access the configuration, for example to set the microservice configuration based on the values from the configuration service.
+One way to do this is to create an application context from the AppModule.
+const appContext = await NestFactory.createApplicationContext(BootstrapConfigModule) const configService = appContext.get(ConfigService) const SERVICE_PORT = configService.get(&amp;#39;SERVICE_PORT&amp;#39;) appContext.close() But a better idea is to use a &amp;ldquo;temporary&amp;rdquo; module to avoid double instantiation of the whole app. See a full example below.</description>
+    </item>
+    
+  </channel>
+</rss>
