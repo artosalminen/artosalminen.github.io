@@ -1,5 +1,5 @@
 ---
-title: "Template, post header here"
+title: "How to access your Synology NAS services over public Web"
 date: 2023-02-09T10:00:00Z
 series: ["Synology"]
 weight: 1
