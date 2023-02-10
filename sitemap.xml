@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://artosalminen.github.io/posts/how-to-set-up-wildcard-certificate-and-proxy-on-synology-nas/</loc>
+    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://artosalminen.github.io/posts/how-to-find-uid-and-gid-on-synology-nas/</loc>
     <lastmod>2023-02-09T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/posts/how-to-set-up-codeserver-on-synology-nas/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/posts/how-to-set-up-wildcard-certificate-and-proxy-on-synology-nas/</loc>
     <lastmod>2023-02-09T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</loc>
