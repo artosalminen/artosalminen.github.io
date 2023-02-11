@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://artosalminen.github.io/posts/how-to-set-up-wildcard-certificate-and-proxy-on-synology-nas/</loc>
     <lastmod>2023-02-09T10:00:00+00:00</lastmod>
   </url><url>
@@ -24,27 +27,39 @@
     <lastmod>2023-02-03T15:04:11+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/coding/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/series/coding/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/mongodb/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/series/mongodb/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/mongoose/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/series/mongoose/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/posts/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/series/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://artosalminen.github.io/tags/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/synology/</loc>
     <lastmod>2023-02-09T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/series/synology/</loc>
-    <lastmod>2023-02-09T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/tags/</loc>
     <lastmod>2023-02-09T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/vscode/</loc>
@@ -63,12 +78,6 @@
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/aggregate/</loc>
-    <lastmod>2023-02-05T08:04:11+02:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/tags/mongodb/</loc>
-    <lastmod>2023-02-05T08:04:11+02:00</lastmod>
-  </url><url>
-    <loc>https://artosalminen.github.io/series/mongodb/</loc>
     <lastmod>2023-02-05T08:04:11+02:00</lastmod>
   </url><url>
     <loc>https://artosalminen.github.io/tags/mongosh/</loc>

@@ -6,7 +6,19 @@
     <description>Recent content in Coding on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Feb 2023 10:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to update a specified item in a nested array with Mongoose</title>
+      <link>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</guid>
+      <description>In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.
+##Setting up the environment
+First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:
+const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoose.Schema({ items: [{ name: String, quantity: Number }] }); const Model = mongoose.model(&amp;#39;Model&amp;#39;, schema); ##Updating a specified item in a nested array</description>
+    </item>
+    
     <item>
       <title>How to Set Up a Codeserver on Synology NAS</title>
       <link>https://artosalminen.github.io/posts/how-to-set-up-codeserver-on-synology-nas/</link>
