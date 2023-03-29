@@ -13,7 +13,10 @@
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</guid>
-      <description> Install license-report (https://www.npmjs.com/package/license-report) npm install -g license-report run the script Get-ChildItem -Directory | foreach { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv } You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of git pull.
+      <description> Install license-report (https://www.npmjs.com/package/license-report)
+npm install -g license-report
+run the script
+Get-ChildItem -Directory | foreach { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv } You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of git pull.
 Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull } </description>
     </item>
     
