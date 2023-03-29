@@ -9,7 +9,9 @@ draft: false
 ---
 
 1. Install `license-report` (https://www.npmjs.com/package/license-report)
+
    `npm install -g license-report`
+
 1. run the script
    ```PowerShell
    Get-ChildItem -Directory | foreach { $_ >> ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json >> ./licenses.csv }
