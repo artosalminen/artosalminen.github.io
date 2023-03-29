@@ -6,7 +6,17 @@
     <description>Recent content in Coding on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to collect all npm licenses from multiple subdirectories with Powershell</title>
+      <link>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</guid>
+      <description> Install license-report (https://www.npmjs.com/package/license-report) npm install -g license-report run the script Get-ChildItem -Directory | foreach { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv } You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of git pull.
+Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull } </description>
+    </item>
+    
     <item>
       <title>How to update a specified item in a nested array with Mongoose</title>
       <link>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</link>

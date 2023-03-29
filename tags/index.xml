@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coding</title>
       <link>https://artosalminen.github.io/tags/coding/</link>
-      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://artosalminen.github.io/tags/git/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powershell</title>
+      <link>https://artosalminen.github.io/tags/powershell/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/tags/powershell/</guid>
       <description></description>
     </item>
     
