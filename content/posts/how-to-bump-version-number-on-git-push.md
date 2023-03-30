@@ -39,13 +39,13 @@ if sh -c ": >/dev/tty" >/dev/null 2>/dev/null; then
 
     case "$update_type" in
         patch | [pP] )
-            yarn version --patch
+            yarn version --patch --no-commit-hooks --no-git-tag-version
             ;;
         minor | [iI] )
-            yarn version --minor
+            yarn version --minor --no-commit-hooks --no-git-tag-version
             ;;
         major | [aA])
-            yarn version --major
+            yarn version --major --no-commit-hooks --no-git-tag-version
             ;;
         none | [nN])
             echo "No version change"
@@ -59,6 +59,9 @@ else
     # /dev/tty is not available
     echo "${red}[pre-push hook] Use command line to set the version number on push${reset}"
 fi
+
+the_version=$(git describe --abbrev=0)
+sed -i "s/^appVersion:.*$/appVersion: ${the_version:1}/" helm/Chart.yaml
 ```
 
 3. Do the Git push from Terminal
@@ -67,12 +70,10 @@ fi
 
 ## Optionally, if you need to update Helm chart versions as well
 
-1. Install `@intility/helm-version` as dev-dependency
+Add this at the end of pre-push script
 
-   `yarn add -D @intility/helm-version`
-
-2. Add a `"version"` entry to `package.json` scripts to update the `appVersion` in _Chart.yaml_ with the helm-version:
-
-```json
-   "version": "helm-version path/to/helm && git add path/to/helm/Chart.yaml",
+```bash
+the_version=$(git describe --abbrev=0)
+sed -i "s/^appVersion:.*$/appVersion: ${the_version:1}/" helm/Chart.yaml
 ```
+
