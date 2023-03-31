@@ -120,9 +120,11 @@ fi
 
 if [ "$version_updated" = true ] ; then
     the_version=$(git describe --abbrev=0)
-    sed -i "s/^appVersion:.*$/appVersion: ${the_version:1}/" path/to/helm/Chart.yaml
+    perl -pi -e "s/^appVersion:.*$/appVersion: ${the_version:1}/" helm/Chart.yaml
+    git tag -d ${the_version}
     git add helm/Chart.yaml
     git commit -m "Set appVersion to ${the_version} in Helm Chart" -n
+    git tag ${the_version}
 fi
 ```
 
