@@ -6,7 +6,19 @@
     <description>Recent content in Coding on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to bump version number on Git push for projects using npm</title>
+      <link>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</guid>
+      <description>Note: This works only from command line as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.
+Install husky as dev-dependency
+See instructions.
+Add the following script into new file .</description>
+    </item>
+    
     <item>
       <title>How to collect all npm licenses from multiple subdirectories with Powershell</title>
       <link>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</link>
