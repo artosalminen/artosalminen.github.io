@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to scrape all links from a website</title>
+      <link>https://artosalminen.github.io/posts/how-to-scrape-all-links-from-website/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-scrape-all-links-from-website/</guid>
+      <description>Simply copy-paste the following one-liner to Chrome Dev Tools. To limit the results, set the reg exp placeholder to contain some sensible value, or replace the function call with return value true.
+Array.prototype.slice.call( document.getElementsByTagName(&amp;#39;a&amp;#39;), 0 ) .map(i =&amp;gt; i.href) .filter(i =&amp;gt; i.match(&amp;#39;reg exp placeholder&amp;#39;)) .forEach(i =&amp;gt; console.log(i)) Here is an explanation for what it does:
+Selects all the elements on the document. Converts the HTMLCollection object returned by getElementsByTagName into an Array by using the Array.</description>
+    </item>
+    
     <item>
       <title>How to bump version number on Git push for projects using npm</title>
       <link>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</link>
