@@ -5,7 +5,7 @@
     <link>https://artosalminen.github.io/series/powershell/</link>
     <description>Recent content in Powershell on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/powershell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to collect all npm licenses from multiple subdirectories with Powershell</title>
