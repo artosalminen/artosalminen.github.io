@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>TypeScript on Arto&#39;s dev time by-products</title>
+    <title>Typescript on Arto&#39;s dev time by-products</title>
     <link>https://artosalminen.github.io/tags/typescript/</link>
-    <description>Recent content in TypeScript on Arto&#39;s dev time by-products</description>
+    <description>Recent content in Typescript on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to capitalize each word of a string in TypeScript</title>
+      <link>https://artosalminen.github.io/posts/how-to-capitalize-each-word-in-typescript/</link>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-capitalize-each-word-in-typescript/</guid>
+      <description>In the world of web development and application design, small details can make a big difference. One such detail is the proper capitalization of text, especially when dealing with user-generated content or dynamic data. Ensuring that text appears neat and consistent can significantly enhance the user experience. In this blog post, we&amp;rsquo;ll introduce you to a handy utility function called capitalizeEachWord that can help you achieve just that.
+What is capitalizeEachWord?</description>
+    </item>
+    
     <item>
       <title>How to use ConfigService in NestJS in application bootstrap</title>
       <link>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</link>
