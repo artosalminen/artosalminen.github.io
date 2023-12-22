@@ -12,11 +12,11 @@ In this post, I will show you how to create a custom React hook that provides lo
 
 ## What is a custom React hook?
 
-A custom React hook is a function that starts with the word `use` and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from [the official React documentation](^4^) or [this tutorial](^5^).
+A custom React hook is a function that starts with the word `use` and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from [the official React documentation](#4) or [this tutorial](#5).
 
 ## What is Intl.DateTimeFormat?
 
-Intl.DateTimeFormat is a JavaScript object that enables language-sensitive date and time formatting. It takes a locale (a string that identifies a language and a region) and an options object (that specifies how to format the date and time) as arguments and returns a formatter object that has a `format` method. You can use this method to convert a Date object into a string that follows the locale and options you provided. You can also use other methods such as `formatToParts` and `formatRange` to get more control over the output. You can learn more about Intl.DateTimeFormat from [the MDN web docs](^1^) or [this Stack Overflow answer](^2^).
+Intl.DateTimeFormat is a JavaScript object that enables language-sensitive date and time formatting. It takes a locale (a string that identifies a language and a region) and an options object (that specifies how to format the date and time) as arguments and returns a formatter object that has a `format` method. You can use this method to convert a Date object into a string that follows the locale and options you provided. You can also use other methods such as `formatToParts` and `formatRange` to get more control over the output. You can learn more about Intl.DateTimeFormat from [the MDN web docs](#1) or [this Stack Overflow answer](#2).
 
 ## How to create the custom hook?
 
@@ -173,13 +173,14 @@ describe('useLocaleDateFormat', () => {
 
 I hope you found this post helpful and learned something new. If you have any questions or feedback, please let me know in the comments. Thank you for reading! 😊.
 
-(1) Reusing Logic with Custom Hooks – React - GitHub Pages. https://react.dev/learn/reusing-logic-with-custom-hooks.
-(2) How to create your own custom React Hooks - LogRocket Blog. https://blog.logrocket.com/create-your-own-custom-react-hooks/.
-(3) Intl.DateTimeFormat - JavaScript | MDN - MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat.
-(4) How to format a JavaScript date object using Intl.DateTimeFormat. https://stackoverflow.com/questions/60672126/how-to-format-a-javascript-date-object-using-intl-datetimeformat.
-(5) Intl.DateTimeFormat() constructor - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat.
-(6) Custom Hooks | Hands on React. https://handsonreact.com/docs/custom-hooks.
-(7) useHooks – The React Hooks Library. https://usehooks.com/.
-(8) React Custom Hook tutorial with example - BezKoder. https://www.bezkoder.com/react-custom-hook/.
-(9) en.wikipedia.org. https://en.wikipedia.org/wiki/React_(software).
+### Here is some further reading for you:
 
+1. <a name="1"></a> Reusing Logic with Custom Hooks – React - GitHub Pages. https://react.dev/learn/reusing-logic-with-custom-hooks.
+2. <a name="2"></a>How to create your own custom React Hooks - LogRocket Blog. https://blog.logrocket.com/create-your-own-custom-react-hooks/.
+3. <a name="3"></a>Intl.DateTimeFormat - JavaScript | MDN - MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat.
+4. <a name="4"></a>How to format a JavaScript date object using Intl.DateTimeFormat. https://stackoverflow.com/questions/60672126/how-to-format-a-javascript-date-object-using-intl-datetimeformat.
+5. <a name="5"></a>Intl.DateTimeFormat() constructor - JavaScript | MDN. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat.
+6. Custom Hooks | Hands on React. https://handsonreact.com/docs/custom-hooks.
+7. useHooks – The React Hooks Library. https://usehooks.com/.
+8. React Custom Hook tutorial with example - BezKoder. https://www.bezkoder.com/react-custom-hook/.
+9. en.wikipedia.org. https://en.wikipedia.org/wiki/React_(software).
