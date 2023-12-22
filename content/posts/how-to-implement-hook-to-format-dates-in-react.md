@@ -1,6 +1,6 @@
 ---
 title: "How to create a custom React hook for locale-specific date formatting"
-date: 1970-01-01
+date: 2023-12-22
 series: ["Coding"]
 weight: 1
 tags: ["Typescript", "Coding", "React"]
