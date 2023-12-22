@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>React on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/tags/react/</link>
+    <description>Recent content in React on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jan 1970 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create a custom React hook for locale-specific date formatting</title>
+      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
+      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
+What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+    </item>
+    
+  </channel>
+</rss>

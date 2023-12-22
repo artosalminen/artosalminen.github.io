@@ -28,5 +28,15 @@ One way to do this is to create an application context from the AppModule.
 const appContext = await NestFactory.createApplicationContext(BootstrapConfigModule) const configService = appContext.get(ConfigService) const SERVICE_PORT = configService.get(&amp;#39;SERVICE_PORT&amp;#39;) appContext.close() But a better idea is to use a &amp;ldquo;temporary&amp;rdquo; module to avoid double instantiation of the whole app. See a full example below.</description>
     </item>
     
+    <item>
+      <title>How to create a custom React hook for locale-specific date formatting</title>
+      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
+      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
+What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+    </item>
+    
   </channel>
 </rss>
