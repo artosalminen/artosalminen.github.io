@@ -12,11 +12,11 @@ In this post, I will show you how to create a custom React hook that provides lo
 
 ## What is a custom React hook?
 
-A custom React hook is a function that starts with the word `use` and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from [the official React documentation](#4) or [this tutorial](#5).
+A custom React hook is a function that starts with the word `use` and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from [the official React documentation (1)](#here-is-some-further-reading-for-you) or [this tutorial (2)](#here-is-some-further-reading-for-you).
 
 ## What is Intl.DateTimeFormat?
 
-Intl.DateTimeFormat is a JavaScript object that enables language-sensitive date and time formatting. It takes a locale (a string that identifies a language and a region) and an options object (that specifies how to format the date and time) as arguments and returns a formatter object that has a `format` method. You can use this method to convert a Date object into a string that follows the locale and options you provided. You can also use other methods such as `formatToParts` and `formatRange` to get more control over the output. You can learn more about Intl.DateTimeFormat from [the MDN web docs](#1) or [this Stack Overflow answer](#2).
+Intl.DateTimeFormat is a JavaScript object that enables language-sensitive date and time formatting. It takes a locale (a string that identifies a language and a region) and an options object (that specifies how to format the date and time) as arguments and returns a formatter object that has a `format` method. You can use this method to convert a Date object into a string that follows the locale and options you provided. You can also use other methods such as `formatToParts` and `formatRange` to get more control over the output. You can learn more about Intl.DateTimeFormat from [the MDN web docs (3)](#here-is-some-further-reading-for-you) or [this Stack Overflow answer (4)](#here-is-some-further-reading-for-you).
 
 ## How to create the custom hook?
 
