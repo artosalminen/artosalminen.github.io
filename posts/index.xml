@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create a custom React hook for locale-specific date formatting</title>
+      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
+      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
+What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+    </item>
+    
     <item>
       <title>How to capitalize each word of a string in TypeScript</title>
       <link>https://artosalminen.github.io/posts/how-to-capitalize-each-word-in-typescript/</link>
@@ -139,16 +149,6 @@ db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB
       <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
 So here we go, you have 40 for each step.
 Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>
-    </item>
-    
-    <item>
-      <title>How to create a custom React hook for locale-specific date formatting</title>
-      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
-      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
-      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
-What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
     </item>
     
   </channel>

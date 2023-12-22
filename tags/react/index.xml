@@ -6,11 +6,11 @@
     <description>Recent content in React on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jan 1970 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create a custom React hook for locale-specific date formatting</title>
       <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
       <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.

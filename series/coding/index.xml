@@ -6,7 +6,17 @@
     <description>Recent content in Coding on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to create a custom React hook for locale-specific date formatting</title>
+      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
+      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
+What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+    </item>
+    
     <item>
       <title>How to capitalize each word of a string in TypeScript</title>
       <link>https://artosalminen.github.io/posts/how-to-capitalize-each-word-in-typescript/</link>
@@ -84,16 +94,6 @@ const appContext = await NestFactory.createApplicationContext(BootstrapConfigMod
       <description>Let&amp;rsquo;s consider a situation where you have two collections, houses and people. Each house has a collection of key holders, which link to the persons collection with their IDs. Key holders list also holds information when the key was given for the identified person.
 In bson, the situation in the database looks like this:
 { &amp;#34;houses&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Main street 1&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2022-02-02T02:02:02&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; }, { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2021-01-01T01:01:01&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fd&amp;#34; } ] }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Broadway 3&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;1993-03-03T03:03:03&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; } ] } ], &amp;#34;persons&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;Jack Bauer&amp;#34;, }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;James Bond&amp;#34;, } ] } You can also do some mapping for the source list, for instance convert foreign keys from strings to ObjectIds.</description>
-    </item>
-    
-    <item>
-      <title>How to create a custom React hook for locale-specific date formatting</title>
-      <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
-      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-      
-      <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
-      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
-What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
     </item>
     
   </channel>
