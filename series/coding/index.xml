@@ -6,7 +6,18 @@
     <description>Recent content in Coding on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to resolve Intel Graphics Command Center port conflict</title>
+      <link>https://artosalminen.github.io/posts/how-to-resolve-intel-control-center-port-conflict/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-resolve-intel-control-center-port-conflict/</guid>
+      <description>For developers working on .NET Core and other development servers, encountering port conflicts can be a common issue. Recently, I came accross with the default port (5000) used for local development server and the Intel(R) Graphics Command Center server. In this blog post, I&amp;rsquo;ll introduce a workaround that involves editing the Windows registry to resolve the conflict and ensure smooth development processes.
+Understanding the Issue:
+The Intel(R) Graphics Command Center server, specifically the OneApp.</description>
+    </item>
+    
     <item>
       <title>How to create a custom React hook for locale-specific date formatting</title>
       <link>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</link>
