@@ -6,7 +6,16 @@
     <description>Recent content on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to sanitize NestJS API responses with Interceptor</title>
+      <link>https://artosalminen.github.io/posts/how-to-manipulate-nestjs-response/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-manipulate-nestjs-response/</guid>
+      <description>In any API development project, ensuring that sensitive or unnecessary data is not exposed in the responses is crucial for security and efficiency. In NestJS, interceptors provide a powerful way to manipulate the flow of data. In this blog post, we&amp;rsquo;ll explore how to use an interceptor to sanitize API responses by removing specific properties. We&amp;rsquo;ll also look at how to write tests to ensure the interceptor behaves as expected.</description>
+    </item>
+    
     <item>
       <title>How to resolve Intel Graphics Command Center port conflict</title>
       <link>https://artosalminen.github.io/posts/how-to-resolve-intel-control-center-port-conflict/</link>

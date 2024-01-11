@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coding</title>
       <link>https://artosalminen.github.io/tags/coding/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NestJS</title>
+      <link>https://artosalminen.github.io/tags/nestjs/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/tags/nestjs/</guid>
       <description></description>
     </item>
     
@@ -130,15 +139,6 @@
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/tags/microservices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NestJS</title>
-      <link>https://artosalminen.github.io/tags/nestjs/</link>
-      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://artosalminen.github.io/tags/nestjs/</guid>
       <description></description>
     </item>
     
