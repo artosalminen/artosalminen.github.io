@@ -6,7 +6,17 @@
     <description>Recent content on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Download Streaming Video Using ffmpeg</title>
+      <link>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</guid>
+      <description>How to Download Streaming Video Using ffmpeg Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is ffmpeg, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing ffmpeg and using it to download streaming video.
+Installing ffmpeg Before you can use ffmpeg, you need to install it on your system.</description>
+    </item>
+    
     <item>
       <title>How to sanitize NestJS API responses with Interceptor</title>
       <link>https://artosalminen.github.io/posts/how-to-manipulate-nestjs-response/</link>

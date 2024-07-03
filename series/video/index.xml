@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Video on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/series/video/</link>
+    <description>Recent content in Video on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Download Streaming Video Using ffmpeg</title>
+      <link>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</guid>
+      <description>How to Download Streaming Video Using ffmpeg Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is ffmpeg, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing ffmpeg and using it to download streaming video.
+Installing ffmpeg Before you can use ffmpeg, you need to install it on your system.</description>
+    </item>
+    
+  </channel>
+</rss>
