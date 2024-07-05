@@ -6,7 +6,17 @@
     <description>Recent content in MongoDB on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Update Nested Array Subdocuments Using Main Document Field with Mongoose</title>
+      <link>https://artosalminen.github.io/posts/how-to-update-nested-array-with-mongoose/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-update-nested-array-with-mongoose/</guid>
+      <description>Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.
+Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a single document. Use an aggregation pipeline ([{}]) as the second argument to reference document fields. Use the $set stage within the pipeline to update the nested array. Use the $$ROOT variable to reference fields from the main document.</description>
+    </item>
+    
     <item>
       <title>How to update a specified item in a nested array with Mongoose</title>
       <link>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</link>
