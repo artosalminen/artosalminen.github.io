@@ -13,8 +13,9 @@
       <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
-      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
-What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+      <description>&lt;p&gt;In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-custom-react-hook&#34;&gt;What is a custom React hook?&lt;/h2&gt;
+&lt;p&gt;A custom React hook is a function that starts with the word &lt;code&gt;use&lt;/code&gt; and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from &lt;a href=&#34;https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/#here-is-some-further-reading-for-you&#34;&gt;the official React documentation (1)&lt;/a&gt; or &lt;a href=&#34;https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/#here-is-some-further-reading-for-you&#34;&gt;this tutorial (2)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

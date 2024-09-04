@@ -13,8 +13,16 @@
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-nested-array-with-mongoose/</guid>
-      <description>Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.
-Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a single document. Use an aggregation pipeline ([{}]) as the second argument to reference document fields. Use the $set stage within the pipeline to update the nested array. Use the $$ROOT variable to reference fields from the main document.</description>
+      <description>&lt;p&gt;Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.&lt;/p&gt;
+&lt;h3 id=&#34;plan&#34;&gt;Plan&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;Model.updateMany()&lt;/code&gt; or &lt;code&gt;Model.findOneAndUpdate()&lt;/code&gt; to update multiple or a single document.&lt;/li&gt;
+&lt;li&gt;Use an aggregation pipeline (&lt;code&gt;[{}]&lt;/code&gt;) as the second argument to reference document fields.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$set&lt;/code&gt; stage within the pipeline to update the nested array.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$$ROOT&lt;/code&gt; variable to reference fields from the main document.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;Assume you have a &lt;code&gt;User&lt;/code&gt; model where each user has an array of &lt;code&gt;posts&lt;/code&gt;, and you want to set each post&amp;rsquo;s &lt;code&gt;authorName&lt;/code&gt; field based on the user&amp;rsquo;s &lt;code&gt;name&lt;/code&gt; field.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +31,10 @@ Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a 
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</guid>
-      <description>How to Download Streaming Video Using ffmpeg Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is ffmpeg, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing ffmpeg and using it to download streaming video.
-Installing ffmpeg Before you can use ffmpeg, you need to install it on your system.</description>
+      <description>&lt;h1 id=&#34;how-to-download-streaming-video-using-ffmpeg&#34;&gt;How to Download Streaming Video Using ffmpeg&lt;/h1&gt;
+&lt;p&gt;Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is &lt;code&gt;ffmpeg&lt;/code&gt;, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing &lt;code&gt;ffmpeg&lt;/code&gt; and using it to download streaming video.&lt;/p&gt;
+&lt;h2 id=&#34;installing-ffmpeg&#34;&gt;Installing ffmpeg&lt;/h2&gt;
+&lt;p&gt;Before you can use &lt;code&gt;ffmpeg&lt;/code&gt;, you need to install it on your system. One of the simplest ways to install &lt;code&gt;ffmpeg&lt;/code&gt; on Windows is via Chocolatey, a package manager for Windows. Follow these steps to install &lt;code&gt;ffmpeg&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,7 +43,7 @@ Installing ffmpeg Before you can use ffmpeg, you need to install it on your syst
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-manipulate-nestjs-response/</guid>
-      <description>In any API development project, ensuring that sensitive or unnecessary data is not exposed in the responses is crucial for security and efficiency. In NestJS, interceptors provide a powerful way to manipulate the flow of data. In this blog post, we&amp;rsquo;ll explore how to use an interceptor to sanitize API responses by removing specific properties. We&amp;rsquo;ll also look at how to write tests to ensure the interceptor behaves as expected.</description>
+      <description>&lt;p&gt;In any API development project, ensuring that sensitive or unnecessary data is not exposed in the responses is crucial for security and efficiency. In NestJS, interceptors provide a powerful way to manipulate the flow of data. In this blog post, we&amp;rsquo;ll explore how to use an interceptor to sanitize API responses by removing specific properties. We&amp;rsquo;ll also look at how to write tests to ensure the interceptor behaves as expected.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,9 +52,9 @@ Installing ffmpeg Before you can use ffmpeg, you need to install it on your syst
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-resolve-intel-control-center-port-conflict/</guid>
-      <description>For developers working on .NET Core and other development servers, encountering port conflicts can be a common issue. Recently, I came accross with the default port (5000) used for local development server and the Intel(R) Graphics Command Center server. In this blog post, I&amp;rsquo;ll introduce a workaround that involves editing the Windows registry to resolve the conflict and ensure smooth development processes.
-Understanding the Issue:
-The Intel(R) Graphics Command Center server, specifically the OneApp.</description>
+      <description>&lt;p&gt;For developers working on .NET Core and other development servers, encountering port conflicts can be a common issue. Recently, I came accross with the default port (5000) used for local development server and the Intel(R) Graphics Command Center server. In this blog post, I&amp;rsquo;ll introduce a workaround that involves editing the Windows registry to resolve the conflict and ensure smooth development processes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Understanding the Issue:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Intel(R) Graphics Command Center server, specifically the OneApp.IGCC.WinService.exe executable, by default, utilizes port 5000. However, this port is commonly used for development servers in the .NET Core ecosystem and other software development environments. When both the Intel(R) Graphics Command Center server and a development server attempt to bind to port 5000 simultaneously, a conflict arises.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,8 +63,9 @@ The Intel(R) Graphics Command Center server, specifically the OneApp.</descripti
       <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/</guid>
-      <description>In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.
-What is a custom React hook? A custom React hook is a function that starts with the word use and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns.</description>
+      <description>&lt;p&gt;In this post, I will show you how to create a custom React hook that provides locale-specific date formatting functions. This hook can be useful if you want to display dates and times in different languages and formats depending on the user&amp;rsquo;s preferences.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-custom-react-hook&#34;&gt;What is a custom React hook?&lt;/h2&gt;
+&lt;p&gt;A custom React hook is a function that starts with the word &lt;code&gt;use&lt;/code&gt; and may call other hooks. Custom hooks let you reuse stateful logic between components without duplicating code or introducing complex patterns. You can learn more about custom hooks from &lt;a href=&#34;https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/#here-is-some-further-reading-for-you&#34;&gt;the official React documentation (1)&lt;/a&gt; or &lt;a href=&#34;https://artosalminen.github.io/posts/how-to-implement-hook-to-format-dates-in-react/#here-is-some-further-reading-for-you&#34;&gt;this tutorial (2)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,8 +74,9 @@ What is a custom React hook? A custom React hook is a function that starts with 
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-capitalize-each-word-in-typescript/</guid>
-      <description>In the world of web development and application design, small details can make a big difference. One such detail is the proper capitalization of text, especially when dealing with user-generated content or dynamic data. Ensuring that text appears neat and consistent can significantly enhance the user experience. In this blog post, we&amp;rsquo;ll introduce you to a handy utility function called capitalizeEachWord that can help you achieve just that.
-What is capitalizeEachWord?</description>
+      <description>&lt;p&gt;In the world of web development and application design, small details can make a big difference. One such detail is the proper capitalization of text, especially when dealing with user-generated content or dynamic data. Ensuring that text appears neat and consistent can significantly enhance the user experience. In this blog post, we&amp;rsquo;ll introduce you to a handy utility function called &lt;code&gt;capitalizeEachWord&lt;/code&gt; that can help you achieve just that.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-capitalizeeachword&#34;&gt;What is &lt;code&gt;capitalizeEachWord&lt;/code&gt;?&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;capitalizeEachWord&lt;/code&gt; function is a TypeScript utility that capitalizes the first letter of each word in a given string while keeping the rest of the letters in lowercase. This function also allows you to specify a word separator, which can be useful when dealing with text containing multiple words separated by a character or whitespace.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,9 +85,13 @@ What is capitalizeEachWord?</description>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-scrape-all-links-from-website/</guid>
-      <description>Simply copy-paste the following one-liner to Chrome Dev Tools. To limit the results, set the reg exp placeholder to contain some sensible value, or replace the function call with return value true.
-Array.prototype.slice.call( document.getElementsByTagName(&amp;#39;a&amp;#39;), 0 ) .map(i =&amp;gt; i.href) .filter(i =&amp;gt; i.match(&amp;#39;reg exp placeholder&amp;#39;)) .forEach(i =&amp;gt; console.log(i)) Here is an explanation for what it does:
-Selects all the elements on the document. Converts the HTMLCollection object returned by getElementsByTagName into an Array by using the Array.</description>
+      <description>&lt;p&gt;Simply copy-paste the following one-liner to Chrome Dev Tools. To limit the results, set the reg exp placeholder to
+contain some sensible value, or replace the function call with return value &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Array.&lt;span style=&#34;color:#a6e22e&#34;&gt;prototype&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;slice&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt;( document.&lt;span style=&#34;color:#a6e22e&#34;&gt;getElementsByTagName&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#a6e22e&#34;&gt;map&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#a6e22e&#34;&gt;filter&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;match&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;reg exp placeholder&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#a6e22e&#34;&gt;forEach&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -84,10 +100,11 @@ Selects all the elements on the document. Converts the HTMLCollection object ret
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</guid>
-      <description>Note: This works only from command line as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.
-Install husky as dev-dependency
-See instructions.
-Add the following script into new file .</description>
+      <description>&lt;p&gt;Note: &lt;strong&gt;This works only from command line&lt;/strong&gt; as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;husky&lt;/code&gt; as dev-dependency&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://typicode.github.io/husky/#/?id=install&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,11 +113,19 @@ Add the following script into new file .</description>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</guid>
-      <description> Install license-report (https://www.npmjs.com/package/license-report)
-npm install -g license-report
-run the script
-Get-ChildItem -Directory | foreach { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv } You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of git pull.
-Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull } </description>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;license-report&lt;/code&gt; (&lt;a href=&#34;https://www.npmjs.com/package/license-report&#34;&gt;https://www.npmjs.com/package/license-report&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install -g license-report&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;run the script&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-ChildItem -Directory | &lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -109,10 +134,20 @@ Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.F
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</guid>
-      <description>In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.
-##Setting up the environment
-First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:
-const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoose.Schema({ items: [{ name: String, quantity: Number }] }); const Model = mongoose.model(&amp;#39;Model&amp;#39;, schema); ##Updating a specified item in a nested array</description>
+      <description>&lt;p&gt;In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.&lt;/p&gt;
+&lt;p&gt;##Setting up the environment&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mongoose&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Schema&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;quantity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Number
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Model&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;model&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Model&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -121,10 +156,20 @@ const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoos
       <pubDate>Thu, 09 Feb 2023 10:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-set-up-wildcard-certificate-and-proxy-on-synology-nas/</guid>
-      <description>To access the Syonology NAS ports outside of your local network, you need to set up DDNS, a wildcard certificate, and a reverse proxy to support HTTPS access.
-DDNS Go to Control Panel / External Access / DDNS. Click Add.
-Make the following selections:
-Service Provider: Synology Hostname: yourname.synology.me Username/Email: &amp;lt;your email&amp;gt; Password: &amp;lt;make it up&amp;gt; Exteral address: no need to change Wildcard certificate Go to Control Panel / Security / Certificate.</description>
+      <description>&lt;p&gt;To access the Syonology NAS ports outside of your local network, you need to
+set up DDNS, a wildcard certificate, and a reverse proxy to support HTTPS access.&lt;/p&gt;
+&lt;h2 id=&#34;ddns&#34;&gt;DDNS&lt;/h2&gt;
+&lt;p&gt;Go to &lt;code&gt;Control Panel&lt;/code&gt; / &lt;code&gt;External Access&lt;/code&gt; / &lt;code&gt;DDNS&lt;/code&gt;. Click &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Make the following selections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service Provider: Synology&lt;/li&gt;
+&lt;li&gt;Hostname: &lt;code&gt;yourname.synology.me&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Username/Email: &lt;code&gt;&amp;lt;your email&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Password: &lt;code&gt;&amp;lt;make it up&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Exteral address: no need to change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wildcard-certificate&#34;&gt;Wildcard certificate&lt;/h2&gt;
+&lt;p&gt;Go to &lt;code&gt;Control Panel&lt;/code&gt; / &lt;code&gt;Security&lt;/code&gt; / &lt;code&gt;Certificate&lt;/code&gt;. Click &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,8 +178,19 @@ Service Provider: Synology Hostname: yourname.synology.me Username/Email: &amp;l
       <pubDate>Thu, 09 Feb 2023 10:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-find-uid-and-gid-on-synology-nas/</guid>
-      <description>The UID and GID values for default user on Synlogy NAS are usually 1026 and 100. There is a very simple way to check the values as follows:
-Create a new Scheduled task asn User-defined script Name the script whatever you see fit Set it to be not repeating Set it to send run details to your email Write the script: id Not too complex, huh? Run it and soon enough, you will receive the email containing the UID and GID values.</description>
+      <description>&lt;p&gt;The UID and GID values for default user on Synlogy NAS are usually 1026 and 100.
+There is a very simple way to check the values as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new Scheduled task asn User-defined script&lt;/li&gt;
+&lt;li&gt;Name the script whatever you see fit&lt;/li&gt;
+&lt;li&gt;Set it to be not repeating&lt;/li&gt;
+&lt;li&gt;Set it to send run details to your email&lt;/li&gt;
+&lt;li&gt;Write the script:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;id
+&lt;/code&gt;&lt;/pre&gt;Not too complex, huh?&lt;/li&gt;
+&lt;li&gt;Run it and soon enough, you will receive the email containing the UID and GID values.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These values will be needed to install some Docker containers, for instance the Codeserver.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -143,8 +199,12 @@ Create a new Scheduled task asn User-defined script Name the script whatever you
       <pubDate>Thu, 09 Feb 2023 10:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-set-up-codeserver-on-synology-nas/</guid>
-      <description>Have you ever missed the VSCode on your tablet? Now there is a solution: run the VSCode on your NAS at home and access it with a browser. That will be possible when you run the Codeserver Docker container on your NAS.
-Before you do this, you probably want to set up a wildcard certificate and a proxy server on your NAS. That will enable you to access the NAS outside your local network using HTTPS.</description>
+      <description>&lt;p&gt;Have you ever missed the VSCode on your tablet? Now there is a solution: run the
+VSCode on your NAS at home and access it with a browser. That will be possible when you run
+&lt;a href=&#34;https://registry.hub.docker.com/r/linuxserver/code-server/&#34;&gt;the Codeserver Docker container&lt;/a&gt; on your NAS.&lt;/p&gt;
+&lt;p&gt;Before you do this, you probably want to set up a wildcard certificate and a proxy server on your NAS. That will
+enable you to access the NAS outside your local network using HTTPS. How to do it, check this:
+&lt;a href=&#34;https://artosalminen.github.io/posts/how-to-set-up-wildcard-certificate-and-proxy-on-synology-nas/&#34;&gt;How to Set Up Wildcard Certificate and Reverse Proxy on Synology NAS&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -153,9 +213,14 @@ Before you do this, you probably want to set up a wildcard certificate and a pro
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</guid>
-      <description>You might want to access the configuration, for example to set the microservice configuration based on the values from the configuration service.
-One way to do this is to create an application context from the AppModule.
-const appContext = await NestFactory.createApplicationContext(BootstrapConfigModule) const configService = appContext.get(ConfigService) const SERVICE_PORT = configService.get(&amp;#39;SERVICE_PORT&amp;#39;) appContext.close() But a better idea is to use a &amp;ldquo;temporary&amp;rdquo; module to avoid double instantiation of the whole app. See a full example below.</description>
+      <description>&lt;p&gt;You might want to access the configuration, for example to set the microservice
+configuration based on the values from the configuration service.&lt;/p&gt;
+&lt;p&gt;One way to do this is to create an application context from the &lt;code&gt;AppModule&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NestFactory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createApplicationContext&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;BootstrapConfigModule&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configService&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ConfigService&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SERVICE_PORT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configService&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SERVICE_PORT&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -164,9 +229,51 @@ const appContext = await NestFactory.createApplicationContext(BootstrapConfigMod
       <pubDate>Sun, 05 Feb 2023 08:04:11 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</guid>
-      <description>Let&amp;rsquo;s consider a situation where you have two collections, houses and people. Each house has a collection of key holders, which link to the persons collection with their IDs. Key holders list also holds information when the key was given for the identified person.
-In bson, the situation in the database looks like this:
-{ &amp;#34;houses&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Main street 1&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2022-02-02T02:02:02&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; }, { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2021-01-01T01:01:01&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fd&amp;#34; } ] }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Broadway 3&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;1993-03-03T03:03:03&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; } ] } ], &amp;#34;persons&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;Jack Bauer&amp;#34;, }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;James Bond&amp;#34;, } ] } You can also do some mapping for the source list, for instance convert foreign keys from strings to ObjectIds.</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s consider a situation where you have two collections, &lt;code&gt;houses&lt;/code&gt; and &lt;code&gt;people&lt;/code&gt;. Each house has a collection
+of key holders, which link to the persons collection with their IDs. Key holders list also holds information
+when the key was given for the identified person.&lt;/p&gt;
+&lt;p&gt;In bson, the situation in the database looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;houses&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Main street 1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyHolders&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2022-02-02T02:02:02&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2021-01-01T01:01:01&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Broadway 3&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyHolders&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1993-03-03T03:03:03&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;persons&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Jack Bauer&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;James Bond&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -175,9 +282,13 @@ In bson, the situation in the database looks like this:
       <pubDate>Sat, 04 Feb 2023 09:32:28 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</guid>
-      <description>If you need to copy a collection of documents from one Mongo collection to another, you can use the mongodump and mongorestore. But if the source database is in the same instance as the target, then you may be able to take a shortcut with mongosh.
-Here is the script to use:
-db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); }); For example, if you are copying all documents from current databases cars collection to a database called another-db&amp;rsquo;s collection vehicles:</description>
+      <description>&lt;p&gt;If you need to copy a collection of documents from one Mongo collection to another, you can
+use the &lt;code&gt;mongodump&lt;/code&gt; and &lt;code&gt;mongorestore&lt;/code&gt;. But if the source database is in the same instance
+as the target, then you may be able to take a shortcut with &lt;code&gt;mongosh&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the script to use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); });
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, if you are copying all documents from current databases &lt;code&gt;cars&lt;/code&gt; collection to a database
+called &lt;code&gt;another-db&lt;/code&gt;&amp;rsquo;s collection &lt;code&gt;vehicles&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -186,9 +297,54 @@ db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB
       <pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</guid>
-      <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
-So here we go, you have 40 for each step.
-Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>
+      <description>&lt;p&gt;So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.&lt;/p&gt;
+&lt;p&gt;So here we go, you have 40 for each step.&lt;/p&gt;
+&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;Create GitHub account if you do not have one yet&lt;/li&gt;
+&lt;li&gt;Create new GitHub repository named &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;On your local development environment, create a folder to work in, run &lt;code&gt;npm install hugo-bin --save-dev&lt;/code&gt; to install Hugo CLI&lt;/li&gt;
+&lt;li&gt;Clone your GitHub repository under the same directory &lt;code&gt;git clone https://github.com/&amp;lt;your username&amp;gt;/&amp;lt;your username&amp;gt;.github.io.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;npx hugo new site &amp;lt;your username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to the repository root directory &lt;code&gt;cd &amp;lt;your username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a theme as Git Submodule: &lt;code&gt;git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;config.toml&lt;/code&gt; by adding the &lt;code&gt;theme = &#39;PaperMod&#39;&lt;/code&gt; option (and add a name for the site while at it)&lt;/li&gt;
+&lt;li&gt;Also update &lt;code&gt;config.toml&lt;/code&gt; with your own baseUrl, e.g. &lt;code&gt;baseURL = &#39;https://&amp;lt;your GitHub username&amp;gt;.github.io/&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;npx hugo new posts/initial-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit the initial post and when ready to publish, remove the draft tag&lt;/li&gt;
+&lt;li&gt;Add the following into &lt;code&gt;.github\workflows\gh-pages.yml&lt;/code&gt; file in the repository
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;name: github pages
+
+on:
+push:
+    branches:
+    - main  # Set a branch that will trigger a deployment
+pull_request:
+
+jobs:
+    deploy:
+        runs-on: ubuntu-22.04
+        steps:
+        - uses: actions/checkout@v3
+            with:
+            submodules: true  # Fetch Hugo themes (true OR recursive)
+            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+        - name: Setup Hugo
+            uses: peaceiris/actions-hugo@v2
+            with:
+            hugo-version: &amp;#39;latest&amp;#39;
+            # extended: true
+
+        - name: Build
+            run: hugo --minify
+
+        - name: Deploy
+            uses: peaceiris/actions-gh-pages@v3
+            if: github.ref == &amp;#39;refs/heads/main&amp;#39;
+            with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
+&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

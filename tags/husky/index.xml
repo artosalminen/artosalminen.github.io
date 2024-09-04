@@ -13,10 +13,11 @@
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</guid>
-      <description>Note: This works only from command line as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.
-Install husky as dev-dependency
-See instructions.
-Add the following script into new file .</description>
+      <description>&lt;p&gt;Note: &lt;strong&gt;This works only from command line&lt;/strong&gt; as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;husky&lt;/code&gt; as dev-dependency&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://typicode.github.io/husky/#/?id=install&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

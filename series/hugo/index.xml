@@ -13,9 +13,54 @@
       <pubDate>Fri, 03 Feb 2023 15:04:11 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-set-up-hugo-blog-in-github-pages/</guid>
-      <description>So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.
-So here we go, you have 40 for each step.
-Create GitHub account if you do not have one yet Create new GitHub repository named &amp;lt;your GitHub username&amp;gt;.</description>
+      <description>&lt;p&gt;So you want to set up a blog. Here is how to do it in 10 minutes or less. For me, it took a little more time, just to make sure for you it would not. And actually, even for me, most of the time was used to write this post.&lt;/p&gt;
+&lt;p&gt;So here we go, you have 40 for each step.&lt;/p&gt;
+&lt;ol start=&#34;0&#34;&gt;
+&lt;li&gt;Create GitHub account if you do not have one yet&lt;/li&gt;
+&lt;li&gt;Create new GitHub repository named &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;On your local development environment, create a folder to work in, run &lt;code&gt;npm install hugo-bin --save-dev&lt;/code&gt; to install Hugo CLI&lt;/li&gt;
+&lt;li&gt;Clone your GitHub repository under the same directory &lt;code&gt;git clone https://github.com/&amp;lt;your username&amp;gt;/&amp;lt;your username&amp;gt;.github.io.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;npx hugo new site &amp;lt;your username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to the repository root directory &lt;code&gt;cd &amp;lt;your username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a theme as Git Submodule: &lt;code&gt;git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;config.toml&lt;/code&gt; by adding the &lt;code&gt;theme = &#39;PaperMod&#39;&lt;/code&gt; option (and add a name for the site while at it)&lt;/li&gt;
+&lt;li&gt;Also update &lt;code&gt;config.toml&lt;/code&gt; with your own baseUrl, e.g. &lt;code&gt;baseURL = &#39;https://&amp;lt;your GitHub username&amp;gt;.github.io/&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;npx hugo new posts/initial-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Edit the initial post and when ready to publish, remove the draft tag&lt;/li&gt;
+&lt;li&gt;Add the following into &lt;code&gt;.github\workflows\gh-pages.yml&lt;/code&gt; file in the repository
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;name: github pages
+
+on:
+push:
+    branches:
+    - main  # Set a branch that will trigger a deployment
+pull_request:
+
+jobs:
+    deploy:
+        runs-on: ubuntu-22.04
+        steps:
+        - uses: actions/checkout@v3
+            with:
+            submodules: true  # Fetch Hugo themes (true OR recursive)
+            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+        - name: Setup Hugo
+            uses: peaceiris/actions-hugo@v2
+            with:
+            hugo-version: &amp;#39;latest&amp;#39;
+            # extended: true
+
+        - name: Build
+            run: hugo --minify
+
+        - name: Deploy
+            uses: peaceiris/actions-gh-pages@v3
+            if: github.ref == &amp;#39;refs/heads/main&amp;#39;
+            with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
+&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

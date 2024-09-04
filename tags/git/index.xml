@@ -13,10 +13,11 @@
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-bump-version-number-on-git-push/</guid>
-      <description>Note: This works only from command line as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.
-Install husky as dev-dependency
-See instructions.
-Add the following script into new file .</description>
+      <description>&lt;p&gt;Note: &lt;strong&gt;This works only from command line&lt;/strong&gt; as user feedback is needed from keyboard to know which part of the version number to bump. It should not break pushing from a GUI tool (e.g. TortoiseGit), but you will not be prompted to update the version number. The positive thing is that the version change is done neatly as a separate commit.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;husky&lt;/code&gt; as dev-dependency&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://typicode.github.io/husky/#/?id=install&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -25,11 +26,19 @@ Add the following script into new file .</description>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-collect-npm-licenses-from-subdirectories/</guid>
-      <description> Install license-report (https://www.npmjs.com/package/license-report)
-npm install -g license-report
-run the script
-Get-ChildItem -Directory | foreach { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv } You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of git pull.
-Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull } </description>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;code&gt;license-report&lt;/code&gt; (&lt;a href=&#34;https://www.npmjs.com/package/license-report&#34;&gt;https://www.npmjs.com/package/license-report&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install -g license-report&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;run the script&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-ChildItem -Directory | &lt;span style=&#34;color:#66d9ef&#34;&gt;foreach&lt;/span&gt; { $_ &amp;gt;&amp;gt; ./licenses.csv ; license-report --output=csv --only=prod --package=./$_/package.json &amp;gt;&amp;gt; ./licenses.csv }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can use the same idea to run other stuff in subdirectories. Just replace the command. Here is an example of &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-PowerShell&#34; data-lang=&#34;PowerShell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

@@ -13,9 +13,13 @@
       <pubDate>Sat, 04 Feb 2023 09:32:28 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</guid>
-      <description>If you need to copy a collection of documents from one Mongo collection to another, you can use the mongodump and mongorestore. But if the source database is in the same instance as the target, then you may be able to take a shortcut with mongosh.
-Here is the script to use:
-db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); }); For example, if you are copying all documents from current databases cars collection to a database called another-db&amp;rsquo;s collection vehicles:</description>
+      <description>&lt;p&gt;If you need to copy a collection of documents from one Mongo collection to another, you can
+use the &lt;code&gt;mongodump&lt;/code&gt; and &lt;code&gt;mongorestore&lt;/code&gt;. But if the source database is in the same instance
+as the target, then you may be able to take a shortcut with &lt;code&gt;mongosh&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the script to use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); });
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, if you are copying all documents from current databases &lt;code&gt;cars&lt;/code&gt; collection to a database
+called &lt;code&gt;another-db&lt;/code&gt;&amp;rsquo;s collection &lt;code&gt;vehicles&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
   </channel>

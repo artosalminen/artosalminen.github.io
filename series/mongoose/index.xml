@@ -13,8 +13,16 @@
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-nested-array-with-mongoose/</guid>
-      <description>Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.
-Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a single document. Use an aggregation pipeline ([{}]) as the second argument to reference document fields. Use the $set stage within the pipeline to update the nested array. Use the $$ROOT variable to reference fields from the main document.</description>
+      <description>&lt;p&gt;Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.&lt;/p&gt;
+&lt;h3 id=&#34;plan&#34;&gt;Plan&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;Model.updateMany()&lt;/code&gt; or &lt;code&gt;Model.findOneAndUpdate()&lt;/code&gt; to update multiple or a single document.&lt;/li&gt;
+&lt;li&gt;Use an aggregation pipeline (&lt;code&gt;[{}]&lt;/code&gt;) as the second argument to reference document fields.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$set&lt;/code&gt; stage within the pipeline to update the nested array.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$$ROOT&lt;/code&gt; variable to reference fields from the main document.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;Assume you have a &lt;code&gt;User&lt;/code&gt; model where each user has an array of &lt;code&gt;posts&lt;/code&gt;, and you want to set each post&amp;rsquo;s &lt;code&gt;authorName&lt;/code&gt; field based on the user&amp;rsquo;s &lt;code&gt;name&lt;/code&gt; field.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,10 +31,20 @@ Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a 
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</guid>
-      <description>In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.
-##Setting up the environment
-First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:
-const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoose.Schema({ items: [{ name: String, quantity: Number }] }); const Model = mongoose.model(&amp;#39;Model&amp;#39;, schema); ##Updating a specified item in a nested array</description>
+      <description>&lt;p&gt;In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.&lt;/p&gt;
+&lt;p&gt;##Setting up the environment&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mongoose&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Schema&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;quantity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Number
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Model&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;model&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Model&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

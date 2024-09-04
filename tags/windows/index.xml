@@ -13,8 +13,10 @@
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-download-streaming-video-with-ffmpeg/</guid>
-      <description>How to Download Streaming Video Using ffmpeg Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is ffmpeg, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing ffmpeg and using it to download streaming video.
-Installing ffmpeg Before you can use ffmpeg, you need to install it on your system.</description>
+      <description>&lt;h1 id=&#34;how-to-download-streaming-video-using-ffmpeg&#34;&gt;How to Download Streaming Video Using ffmpeg&lt;/h1&gt;
+&lt;p&gt;Streaming video has become ubiquitous, but sometimes you might want to save a portion of a video for offline viewing or archival purposes. One powerful tool for this task is &lt;code&gt;ffmpeg&lt;/code&gt;, a versatile command-line program for handling multimedia data. In this guide, we&amp;rsquo;ll walk you through the process of installing &lt;code&gt;ffmpeg&lt;/code&gt; and using it to download streaming video.&lt;/p&gt;
+&lt;h2 id=&#34;installing-ffmpeg&#34;&gt;Installing ffmpeg&lt;/h2&gt;
+&lt;p&gt;Before you can use &lt;code&gt;ffmpeg&lt;/code&gt;, you need to install it on your system. One of the simplest ways to install &lt;code&gt;ffmpeg&lt;/code&gt; on Windows is via Chocolatey, a package manager for Windows. Follow these steps to install &lt;code&gt;ffmpeg&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,9 +25,9 @@ Installing ffmpeg Before you can use ffmpeg, you need to install it on your syst
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-resolve-intel-control-center-port-conflict/</guid>
-      <description>For developers working on .NET Core and other development servers, encountering port conflicts can be a common issue. Recently, I came accross with the default port (5000) used for local development server and the Intel(R) Graphics Command Center server. In this blog post, I&amp;rsquo;ll introduce a workaround that involves editing the Windows registry to resolve the conflict and ensure smooth development processes.
-Understanding the Issue:
-The Intel(R) Graphics Command Center server, specifically the OneApp.</description>
+      <description>&lt;p&gt;For developers working on .NET Core and other development servers, encountering port conflicts can be a common issue. Recently, I came accross with the default port (5000) used for local development server and the Intel(R) Graphics Command Center server. In this blog post, I&amp;rsquo;ll introduce a workaround that involves editing the Windows registry to resolve the conflict and ensure smooth development processes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Understanding the Issue:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Intel(R) Graphics Command Center server, specifically the OneApp.IGCC.WinService.exe executable, by default, utilizes port 5000. However, this port is commonly used for development servers in the .NET Core ecosystem and other software development environments. When both the Intel(R) Graphics Command Center server and a development server attempt to bind to port 5000 simultaneously, a conflict arises.&lt;/p&gt;</description>
     </item>
     
   </channel>

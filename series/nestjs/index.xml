@@ -13,7 +13,7 @@
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-manipulate-nestjs-response/</guid>
-      <description>In any API development project, ensuring that sensitive or unnecessary data is not exposed in the responses is crucial for security and efficiency. In NestJS, interceptors provide a powerful way to manipulate the flow of data. In this blog post, we&amp;rsquo;ll explore how to use an interceptor to sanitize API responses by removing specific properties. We&amp;rsquo;ll also look at how to write tests to ensure the interceptor behaves as expected.</description>
+      <description>&lt;p&gt;In any API development project, ensuring that sensitive or unnecessary data is not exposed in the responses is crucial for security and efficiency. In NestJS, interceptors provide a powerful way to manipulate the flow of data. In this blog post, we&amp;rsquo;ll explore how to use an interceptor to sanitize API responses by removing specific properties. We&amp;rsquo;ll also look at how to write tests to ensure the interceptor behaves as expected.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,9 +22,14 @@
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-use-config-service-in-nestjs-bootstrap/</guid>
-      <description>You might want to access the configuration, for example to set the microservice configuration based on the values from the configuration service.
-One way to do this is to create an application context from the AppModule.
-const appContext = await NestFactory.createApplicationContext(BootstrapConfigModule) const configService = appContext.get(ConfigService) const SERVICE_PORT = configService.get(&amp;#39;SERVICE_PORT&amp;#39;) appContext.close() But a better idea is to use a &amp;ldquo;temporary&amp;rdquo; module to avoid double instantiation of the whole app. See a full example below.</description>
+      <description>&lt;p&gt;You might want to access the configuration, for example to set the microservice
+configuration based on the values from the configuration service.&lt;/p&gt;
+&lt;p&gt;One way to do this is to create an application context from the &lt;code&gt;AppModule&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;NestFactory&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;createApplicationContext&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;BootstrapConfigModule&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configService&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ConfigService&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SERVICE_PORT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;configService&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;get&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SERVICE_PORT&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;appContext&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;close&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

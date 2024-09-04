@@ -13,8 +13,16 @@
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-nested-array-with-mongoose/</guid>
-      <description>Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.
-Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a single document. Use an aggregation pipeline ([{}]) as the second argument to reference document fields. Use the $set stage within the pipeline to update the nested array. Use the $$ROOT variable to reference fields from the main document.</description>
+      <description>&lt;p&gt;Updating nested array subdocuments based on a field in the main document is a common task when working with MongoDB and Mongoose. Here&amp;rsquo;s a simple guide and example to help you accomplish this.&lt;/p&gt;
+&lt;h3 id=&#34;plan&#34;&gt;Plan&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use &lt;code&gt;Model.updateMany()&lt;/code&gt; or &lt;code&gt;Model.findOneAndUpdate()&lt;/code&gt; to update multiple or a single document.&lt;/li&gt;
+&lt;li&gt;Use an aggregation pipeline (&lt;code&gt;[{}]&lt;/code&gt;) as the second argument to reference document fields.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$set&lt;/code&gt; stage within the pipeline to update the nested array.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;$$ROOT&lt;/code&gt; variable to reference fields from the main document.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;Assume you have a &lt;code&gt;User&lt;/code&gt; model where each user has an array of &lt;code&gt;posts&lt;/code&gt;, and you want to set each post&amp;rsquo;s &lt;code&gt;authorName&lt;/code&gt; field based on the user&amp;rsquo;s &lt;code&gt;name&lt;/code&gt; field.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,10 +31,20 @@ Plan Use Model.updateMany() or Model.findOneAndUpdate() to update multiple or a 
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-update-specified-item-in-nested-mongo-array-with-mongoose/</guid>
-      <description>In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.
-##Setting up the environment
-First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:
-const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoose.Schema({ items: [{ name: String, quantity: Number }] }); const Model = mongoose.model(&amp;#39;Model&amp;#39;, schema); ##Updating a specified item in a nested array</description>
+      <description>&lt;p&gt;In this blog post, we&amp;rsquo;ll go over how to update a specified item in a nested array inside a Mongoose document.&lt;/p&gt;
+&lt;p&gt;##Setting up the environment&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s set up the environment by creating a Mongoose schema and model. Here&amp;rsquo;s an example schema that has a nested array of items:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mongoose&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Schema&lt;/span&gt;({
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;items&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;quantity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Number
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Model&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mongoose&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;model&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Model&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;schema&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -35,9 +53,51 @@ const mongoose = require(&amp;#39;mongoose&amp;#39;); const schema = new mongoos
       <pubDate>Sun, 05 Feb 2023 08:04:11 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-merge-nested-list-to-collection-with-mongo-aggregate/</guid>
-      <description>Let&amp;rsquo;s consider a situation where you have two collections, houses and people. Each house has a collection of key holders, which link to the persons collection with their IDs. Key holders list also holds information when the key was given for the identified person.
-In bson, the situation in the database looks like this:
-{ &amp;#34;houses&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Main street 1&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2022-02-02T02:02:02&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; }, { &amp;#34;keyDelivered&amp;#34;: &amp;#34;2021-01-01T01:01:01&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fd&amp;#34; } ] }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;), &amp;#34;address&amp;#34;: &amp;#34;Broadway 3&amp;#34;, &amp;#34;keyHolders&amp;#34;: [ { &amp;#34;keyDelivered&amp;#34;: &amp;#34;1993-03-03T03:03:03&amp;#34;, &amp;#34;personId&amp;#34;: &amp;#34;5fbb5ab778045a985690b5fc&amp;#34; } ] } ], &amp;#34;persons&amp;#34;: [ { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;Jack Bauer&amp;#34;, }, { &amp;#34;_id&amp;#34;: ObjectId(&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;), &amp;#34;name&amp;#34;: &amp;#34;James Bond&amp;#34;, } ] } You can also do some mapping for the source list, for instance convert foreign keys from strings to ObjectIds.</description>
+      <description>&lt;p&gt;Let&amp;rsquo;s consider a situation where you have two collections, &lt;code&gt;houses&lt;/code&gt; and &lt;code&gt;people&lt;/code&gt;. Each house has a collection
+of key holders, which link to the persons collection with their IDs. Key holders list also holds information
+when the key was given for the identified person.&lt;/p&gt;
+&lt;p&gt;In bson, the situation in the database looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;houses&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fba17c1c4566e57fafdcd7e&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Main street 1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyHolders&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2022-02-02T02:02:02&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2021-01-01T01:01:01&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fba17c1c4566e57fafdcd7f&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Broadway 3&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyHolders&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;keyDelivered&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1993-03-03T03:03:03&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;personId&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;persons&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fc&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Jack Bauer&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;ObjectId(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5fbb5ab778045a985690b5fd&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;James Bond&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -46,9 +106,13 @@ In bson, the situation in the database looks like this:
       <pubDate>Sat, 04 Feb 2023 09:32:28 +0200</pubDate>
       
       <guid>https://artosalminen.github.io/posts/how-to-copy-collection-to-another-mongo-db-in-mongosh/</guid>
-      <description>If you need to copy a collection of documents from one Mongo collection to another, you can use the mongodump and mongorestore. But if the source database is in the same instance as the target, then you may be able to take a shortcut with mongosh.
-Here is the script to use:
-db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); }); For example, if you are copying all documents from current databases cars collection to a database called another-db&amp;rsquo;s collection vehicles:</description>
+      <description>&lt;p&gt;If you need to copy a collection of documents from one Mongo collection to another, you can
+use the &lt;code&gt;mongodump&lt;/code&gt; and &lt;code&gt;mongorestore&lt;/code&gt;. But if the source database is in the same instance
+as the target, then you may be able to take a shortcut with &lt;code&gt;mongosh&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the script to use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;db.&amp;lt;source collection&amp;gt;.find().forEach(function(d){ db.getSiblingDB(&amp;#39;&amp;lt;dest db&amp;gt;&amp;#39;)[&amp;#39;&amp;lt;dest collection&amp;gt;&amp;#39;].insert(d); });
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, if you are copying all documents from current databases &lt;code&gt;cars&lt;/code&gt; collection to a database
+called &lt;code&gt;another-db&lt;/code&gt;&amp;rsquo;s collection &lt;code&gt;vehicles&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
   </channel>
