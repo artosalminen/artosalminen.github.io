@@ -17,7 +17,10 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Install &lt;code&gt;husky&lt;/code&gt; as dev-dependency&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://typicode.github.io/husky/#/?id=install&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;See &lt;a href=&#34;https://typicode.github.io/husky/#/?id=install&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the following script into new file &lt;em&gt;.husky/pre-push&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

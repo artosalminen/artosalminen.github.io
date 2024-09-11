@@ -60,7 +60,13 @@ jobs:
             with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./public
-&lt;/code&gt;&lt;/pr</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Create a branch named &lt;code&gt;gh-pages&lt;/code&gt; in GitHub&lt;/li&gt;
+&lt;li&gt;Check which branch is used for GitHub pages publishing in your GitHub repository, set it to &lt;code&gt;gh-pages&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set in &lt;strong&gt;GitHub Settings &amp;gt; Actions &amp;gt; General&lt;/strong&gt;: Workflow permissions to &lt;code&gt;Read and write permissions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Push to Git remote using the main branch&lt;/li&gt;
+&lt;li&gt;Make sure the deployment went smoothly, and enjoy the result in &lt;code&gt;https://&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>
