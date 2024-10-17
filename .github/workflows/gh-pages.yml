@@ -20,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.135.0' # avoid build failing due to PaperMod issue
           # extended: true
 
       - name: Build
