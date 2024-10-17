@@ -79,7 +79,7 @@ params:
     Title: 'Hello fellow!'
     Content: Feel free to browse my coding related notes
 
-  social = true
+  social: true
   socialIcons:
     - name: github
       url: 'https://github.com/artosalminen'
