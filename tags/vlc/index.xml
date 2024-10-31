@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vlc on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/tags/vlc/</link>
+    <description>Recent content in Vlc on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to stream audio locally with FFMpeg?</title>
+      <link>https://artosalminen.github.io/posts/how-to-stream-audio-in-local-network-with-ffmpeg/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-stream-audio-in-local-network-with-ffmpeg/</guid>
+      <description>&lt;p&gt;Streaming audio locally can be useful for broadcasting live audio to multiple devices or applications within the same network. With FFmpeg, this setup becomes simple, allowing you to stream audio directly from your microphone to any player that supports UDP streaming, like VLC. This guide explains how to set up FFmpeg on Windows, configure a low-latency stream, and tune it for optimal performance.&lt;/p&gt;
+&lt;h2 id=&#34;step-1-install-ffmpeg-on-windows&#34;&gt;Step 1: Install FFmpeg on Windows&lt;/h2&gt;
+&lt;p&gt;To use FFmpeg on Windows, you’ll need to download and install it. Follow these steps:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
