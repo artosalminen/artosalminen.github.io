@@ -1,5 +1,5 @@
 ---
-title: "How to stream audio locally with FFMpeg?"
+title: "How to stream audio in local network with FFMpeg?"
 date: 2024-10-31
 series: ["ffmpeg", "vlc"]
 weight: 1
