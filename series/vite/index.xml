@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vite on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/series/vite/</link>
+    <description>Recent content in Vite on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/series/vite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Resolve Vitest `EMFILE: too many open files` Errors on a High Thread Count Machine</title>
+      <link>https://artosalminen.github.io/posts/how-to-resolve-vitest-mui-icons-emfile-too-many-open-files-error/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-resolve-vitest-mui-icons-emfile-too-many-open-files-error/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re running your Vitest suite on a high thread count machine—like an 8-core or 16-core development machine—you may encounter a frustrating error that looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;EMFILE: too many open files
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This issue can be cryptic at first, especially when your system doesn&amp;rsquo;t seem anywhere near running out of resources. But the root cause might not be in your system limits—it could be in your import statements.&lt;/p&gt;
+&lt;h2 id=&#34;the-unexpected-culprit-named-imports-from-mui&#34;&gt;The Unexpected Culprit: Named Imports from MUI&lt;/h2&gt;
+&lt;p&gt;In my case, after hours of digging, I discovered that the error was caused by using &lt;strong&gt;named imports&lt;/strong&gt; from Material UI (MUI) components and icons. These named imports, when used across many test files, were triggering Vitest to open an excessive number of files behind the scenes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
