@@ -6,7 +6,16 @@
     <description>Recent content on Arto&#39;s dev time by-products</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built a Vehicle Cost Comparison Tool That Doesn&#39;t Ignore Depreciation</title>
+      <link>https://artosalminen.github.io/posts/how-i-built-a-vehicle-cost-comparison-tool/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-i-built-a-vehicle-cost-comparison-tool/</guid>
+      <description>&lt;p&gt;I was replacing a 2014 petrol MPV with a used EV. Along the way I collected insurance quotes, checked the vehicle tax bracket, asked for a battery health certificate, got a trade-in offer, and compared a cash price against a dealer&amp;rsquo;s financing plan. Somewhere in the middle of all that I wanted one simple thing: a single number telling me what switching would actually cost per year, compared to just keeping the car I already had.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Resolve Vitest `EMFILE: too many open files` Errors on a High Thread Count Machine</title>
       <link>https://artosalminen.github.io/posts/how-to-resolve-vitest-mui-icons-emfile-too-many-open-files-error/</link>
