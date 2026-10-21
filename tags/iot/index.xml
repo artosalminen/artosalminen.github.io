@@ -20,7 +20,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.de/dp/B0DYV1TJQS&#34;&gt;diymore ESP32-C3 board with a 0.42&amp;quot; OLED&lt;/a&gt;. Native USB-C and a built-in 72x40 SSD1306 display.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.de/dp/B07XJTNRD8&#34;&gt;SW-420 vibration sensor module&lt;/a&gt;. A spring vibration switch with an LM393 comparator, a sensitivity potentiometer and a digital &lt;code&gt;DO&lt;/code&gt; output.&lt;/li&gt;
 &lt;li&gt;Three Dupont jumper wires.&lt;/li&gt;
-&lt;li&gt;Smart plugs already in Home Assistant for the light and display (I use a Tapo P300 power strip).&lt;/li&gt;
+&lt;li&gt;A smart power strip for the light and display. I use a &lt;a href=&#34;https://www.verkkokauppa.com/fi/product/847273/TP-LINK-Tapo-P300-alyjatkojohto&#34;&gt;TP-Link Tapo P300&lt;/a&gt;, which has three individually switchable outlets. Through Home Assistant&amp;rsquo;s TP-Link Smart Home integration each outlet shows up in Home Assistant as its own switch, for example &lt;code&gt;switch.office_p300_darts_board_light&lt;/code&gt; and &lt;code&gt;switch.office_p300_darts_display&lt;/code&gt;, the entities used in the automations below.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Wiring is three wires:&lt;/p&gt;</description>
     </item>
