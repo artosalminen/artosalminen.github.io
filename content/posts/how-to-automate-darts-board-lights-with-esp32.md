@@ -16,7 +16,7 @@ Full source: [github.com/artosalminen/esp32-vibration-sensor](https://github.com
 - [diymore ESP32-C3 board with a 0.42" OLED](https://www.amazon.de/dp/B0DYV1TJQS). Native USB-C and a built-in 72x40 SSD1306 display.
 - [SW-420 vibration sensor module](https://www.amazon.de/dp/B07XJTNRD8). A spring vibration switch with an LM393 comparator, a sensitivity potentiometer and a digital `DO` output.
 - Three Dupont jumper wires.
-- Smart plugs already in Home Assistant for the light and display (I use a Tapo P300 power strip).
+- A smart power strip for the light and display. I use a [TP-Link Tapo P300](https://www.verkkokauppa.com/fi/product/847273/TP-LINK-Tapo-P300-alyjatkojohto), which has three individually switchable outlets. Through Home Assistant's TP-Link Smart Home integration each outlet shows up in Home Assistant as its own switch, for example `switch.office_p300_darts_board_light` and `switch.office_p300_darts_display`, the entities used in the automations below.
 
 Wiring is three wires:
 
@@ -168,7 +168,7 @@ actions:
 
 The mood light is left on on purpose. Check your own entity IDs under **Settings > Devices & Services > Entities**, because Home Assistant prefixes them with the device name.
 
-If your smart plugs have their own auto-off timers, disable them or set them longer than 15 minutes so they don't cut the light mid-game.
+The P300 outlets also have their own auto-off timers, exposed as `switch.office_darts_*_auto_off_enabled`. Leave them disabled, or set them longer than 15 minutes, so they don't cut the light mid-game. The same goes for any smart plug with a built-in timer.
 
 ## Gotcha: the ESP32-C3 wouldn't join WiFi
 
