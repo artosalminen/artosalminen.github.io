@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bluetooth on Arto&#39;s dev time by-products</title>
+    <link>https://artosalminen.github.io/tags/bluetooth/</link>
+    <description>Recent content in Bluetooth on Arto&#39;s dev time by-products</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://artosalminen.github.io/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to monitor a car&#39;s 12 V battery in Home Assistant with ESP32</title>
+      <link>https://artosalminen.github.io/posts/how-to-monitor-car-12v-battery-in-home-assistant-with-esp32/</link>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://artosalminen.github.io/posts/how-to-monitor-car-12v-battery-in-home-assistant-with-esp32/</guid>
+      <description>&lt;p&gt;My car is a Hyundai Ioniq 5. Like most EVs, it still has an ordinary 12 V battery, and that battery decides whether the car wakes up at all. If it&amp;rsquo;s flat, a full high-voltage pack doesn&amp;rsquo;t help: the car won&amp;rsquo;t go into ready mode. The 12 V battery is charged from the high-voltage pack, so a problem on that side can drain it without warning. I want to know the 12 V voltage every day, not only when the car refuses to start.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
